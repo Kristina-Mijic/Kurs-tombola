@@ -14,65 +14,149 @@ body {
   height: 100vh;
 }
 
-.tombola-wrapper .tombola-main-title {
+.tombola-wrapper .tombola-top {
+  position: relative;
+  background-color: #FFFBF5;
+}
+
+.tombola-wrapper .tombola-top .tombola-main-title {
   text-align: center;
   font-size: 50px;
   padding: 40px 0;
 }
 
-.tombola-wrapper .tombola-main-title span {
+.tombola-wrapper .tombola-top .tombola-main-title span {
   display: inline-block;
   transform-style: preserve-3d;
   transform-origin: 0 100%;
   animation: textAnimationEffect 3s infinite linear;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(even) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(even) {
   color: #1F8A70;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(2) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(3) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(3) {
   animation-delay: 0.4s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(4) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(4) {
   animation-delay: 0.6s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(5) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(5) {
   animation-delay: 0.8s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(6) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(6) {
   animation-delay: 1s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(7) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(7) {
   animation-delay: 1.2s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(8) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(8) {
   animation-delay: 1.4s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(9) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(9) {
   animation-delay: 1.6s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(10) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(10) {
   animation-delay: 1.8s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(11) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(11) {
   animation-delay: 2s;
 }
 
-.tombola-wrapper .tombola-main-title span:nth-child(12) {
+.tombola-wrapper .tombola-top .tombola-main-title span:nth-child(12) {
   animation-delay: 2.2s;
+}
+
+.tombola-wrapper .tombola-top .tombola-balls-photo {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+.tombola-wrapper .tombola-top .tombola-balls-photo img {
+  width: 30%;
+}
+
+.tombola-wrapper .tombola-input-wrapper {
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombola-wrapper .tombola-input-wrapper input {
+  margin-right: 80px;
+  padding: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  text-align: center;
+  width: 5%;
+}
+
+.tombola-wrapper .tombola-input-wrapper .tombola-btn {
+  padding: 10px 40px;
+  font-size: 25px;
+  outline: none;
+  cursor: pointer;
+  background-color: #1F8A70;
+  color: white;
+}
+
+.tombola-wrapper .tombola-input-wrapper .tombola-btn:hover {
+  background-color: white;
+  color: #1F8A70;
+}
+
+.tombola-wrapper .tombola-input-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tombola-wrapper .numbers-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFBF5;
+}
+
+.tombola-wrapper .numbers-cards-wrapper .number-card {
+  font-size: 50px;
+  padding: 20px;
+  background-color: #1F8A70;
+  border-radius: 50%;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+.tombola-wrapper .numbers-cards-wrapper .number-matched {
+  font-size: 50px;
+  padding: 20px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: white;
 }
 
 @keyframes textAnimationEffect {
